@@ -29,6 +29,62 @@
   <h1>Portrait</h1>
   <p>Self portrait created with Processing</p>
   <img src="p5portrait.png" width="1514" height="1292" class="img-fluid rounded">
+  <br>
+  <h7>function setup() {
+createCanvas(600, 600);
+}
+function draw() {
+background(255, 204, 0);
+strokeWeight(4);
+//hair
+fill(51); ellipse(300, 380, 370, 500);
+//clips
+fill(225, 0, 0);
+ellipse(200, 200, 50, 30);
+ellipse(400, 200, 50, 30);
+//neck
+fill(260,219,172);
+rect(250, 400, 100, 200, 20);
+//body
+fill(49, 98, 183);
+rect(100, 500, 400, 200, 40);
+//face
+fill(260,219,172);
+ellipse(300, 300, 250, 300);
+//brow
+fill(51);
+fill(145, 106, 77); //Eyebrows
+beginShape();
+vertex(277, 260);
+vertex(277, 245);
+vertex(225, 235);
+vertex(195, 255);
+vertex(225, 255);
+endShape(CLOSE);
+fill(145, 106, 77);
+beginShape();
+vertex(323, 260);
+vertex(323, 245);
+vertex(375, 235);
+vertex(405, 255);
+vertex(375, 255);
+endShape(CLOSE);
+//eyes
+fill(255, 255, 255);
+ellipse(245, 295, 70, 30);
+ellipse(355, 295, 70, 30);
+//iris
+fill(127, 88, 66); ellipse(245, 295, 30, 30);
+ellipse(355, 295, 30, 30);
+//pupils
+fill(0);
+ellipse(245, 295, 10, 10);
+ellipse(355, 295, 10, 10);
+line(300, 300, 310, 350);
+rect(265, 380, 70, 1);
+arc(300,380,70,50,0.00,3.14);
+
+}</h7>
 </div>
 </body>
 </html> 
