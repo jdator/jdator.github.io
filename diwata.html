@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #FAFAFA">
+      <a-assets>
+        <img
+          id="sky"
+          src="https://cdn.glitch.com/285cda1f-91cc-455d-9587-743a307e1fa3%2Fearf5.jpg?v=1607731288818"
+        />
+      </a-assets>
+
+      <a-sky src="#sky"></a-sky>
+      <a-sky src="#sky" material="" geometry=""></a-sky>
+
+      <a-entity
+        camera=""
+        position="-0.2 1 4"
+        wasd-controls=""
+        rotation="3.461238040385303 -11.84590241432977 178.29300668880958"
+        look-controls=""
+        aframe-injected=""
+        data-aframe-inspector-original-camera=""
+      ></a-entity>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/285cda1f-91cc-455d-9587-743a307e1fa3%2FBULUL-color.gltf?v=1607580073017"
+        scale="0.1 0.1 0.1"
+        rotation="-15 140 1"
+      ></a-entity>
+
+      <a-entity
+        light="color: #BBB; type: ambient"
+        data-aframe-default-light=""
+        aframe-injected=""
+      ></a-entity>
+
+      <a-entity
+        light="intensity: 0.0001; castShadow: true"
+        position="-2 10 2"
+        data-aframe-default-light=""
+        aframe-injected=""
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
